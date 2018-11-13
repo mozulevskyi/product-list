@@ -2,7 +2,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: todolist_development
+  database: product-list_development
   pool: 5
   username: postgres
   password:
@@ -10,7 +10,7 @@ development:
 test: &test
   adapter: postgresql
   encoding: unicode
-  database: todolist_test
+  database: product-lis_test
   pool: 5
   username: postgres
   password:
@@ -18,7 +18,7 @@ test: &test
 production:
   adapter: postgresql
   encoding: unicode
-  database: todolist_production
+  database: product-lis_production
   pool: 5
   username: postgres
   password:

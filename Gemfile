@@ -11,7 +11,6 @@ gem 'coffee-rails', '~> 4.2'                  # Use CoffeeScript for .coffee ass
 gem 'turbolinks', '~> 5'                      # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'jbuilder', '~> 2.5'                      # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 
-
 group :development, :test do
   gem 'byebug', '~> 10.0.2'
   gem 'capybara', '~> 2.13'
