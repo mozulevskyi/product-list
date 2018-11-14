@@ -10,6 +10,7 @@ gem 'uglifier', '>= 1.3.0'                    # Use Uglifier as compressor for J
 gem 'coffee-rails', '~> 4.2'                  # Use CoffeeScript for .coffee assets and views
 gem 'turbolinks', '~> 5'                      # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'jbuilder', '~> 2.5'                      # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem 'webpacker', '~> 3.5', '>= 3.5.5' # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 
 group :development, :test do
   gem 'byebug', '~> 10.0.2'

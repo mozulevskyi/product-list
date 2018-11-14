@@ -1,0 +1,352 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #6B6E70;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(25px);
+  color: #FAED26;
+  margin-bottom: 2%;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/*style for buttons*/
+.newProjButton {
+  border: 1px solid transparent;
+  line-height: 20px;
+  padding: 0.5% 7%;
+  background-color: #86C232;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 1%;
+  margin-left: 1%;
+}
+.newProjButton:hover {
+  background: #86C000;
+  box-shadow: 1px 1px 5px #555;
+}
+
+.newTaskButton {
+  border: 1px solid transparent;
+  line-height: 18px;
+  padding: 10px 8px;
+  cursor: pointer;
+  width: 30%;
+  color: #6B6E70;
+  font-size: 120%;
+  background-color: #FAE920;
+  margin-top: 3%;
+}
+.newTaskButton:hover {
+  background: #FAE000;
+  box-shadow: 1px 1px 5px #555;
+}
+
+.newComButton {
+  border: 1px solid transparent;
+  line-height: 20px;
+  padding: 5px 20px;
+  margin-top: 2%;
+  margin-left: 40%;
+  width: 20%;
+  display: block;
+  color: white;
+  cursor: pointer;
+  font-size: 96%;
+  background-color: #46444E;
+}
+.newComButton:hover {
+  background: #19445E;;
+  box-shadow: 1px 1px 5px #555;
+}
+
+/*style for components*/
+.taskTile {
+  margin-top: 14px;
+  font-size: 15px;
+  font-weight: 400;
+  width: 90%;
+  margin-left: 40px;
+  text-align: left
+}
+
+.tile {
+  margin-top: auto;
+  width: 85%;
+  margin-left: 50px;
+  font-weight: 400;
+  display: inline;
+}
+
+.task {
+  margin-top: -2.5%;
+  margin-bottom: -0.5%;
+  margin-left: 50px;
+  width: 88%;
+  background: none;
+  height: 19px;
+  font-size: 14px;
+}
+
+.comment {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  height: 44%;
+  margin-left: 1%;
+  width: 96%;
+  margin-top: 1%;
+  padding: 2px;
+  text-align: left;
+  font-size: 12px;
+  margin-bottom: 1%;
+  font-weight: 400;
+}
+
+/*intput style*/
+.projectInput {
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-radius: 2px;
+  outline: none;
+  margin-bottom: -1%;
+  margin-left: -1.9%;
+  width: 46.6%;
+  background: none;
+  height: 50px;
+  font-size: 17px;
+}
+
+.checkboxInput {
+  float: left;
+  margin-top: -1.4%;
+  margin-left: 3%;
+}
+
+.taskInput {
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-radius: 2px;
+  outline: none;
+  margin-top: 15px;
+  margin-bottom: 0;
+  margin-left: -0.3%;
+  width: 91.4%;
+  background: none;
+  height: 44px;
+  font-size: 17px;
+  text-align: center;
+}
+
+.commentInput {
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-radius: 2px;
+  outline: none;
+  margin-top: 7px;
+  margin-bottom: 0px;
+  margin-left: -41px;
+  width: 92.5%;
+  background: none;
+  height: 17px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.taskTab {
+}
+
+.commentTab {
+}
+
+/*style for add and delete buttons*/
+.projectDeleteButton {
+  visibility: hidden;
+  float: right;
+  margin-right: -5px;
+  font-size: 25px;
+  cursor: pointer;
+  margin-top: -5px;
+  color: white;
+}
+.accordion:hover .projectDeleteButton {
+  visibility: visible;
+}
+
+.taskDeleteButton {
+  visibility: hidden;
+  float: right;
+  margin-right: -3px;
+  margin-top: -7px;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+.taskTab:hover .taskDeleteButton {
+  visibility: visible;
+}
+
+.commentDeleteButton {
+  visibility: hidden;
+  float: right;
+  margin-right: 26px;
+  margin-top: -3px;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+.commentTab:hover .commentDeleteButton {
+  visibility: visible;
+}
+
+.addProjButton {
+  background: #e74c3c;
+  border: none;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  width: 4%;
+  padding: 0.97%;
+  margin-right: -2.8%;
+  margin-left: 0.2%;
+  margin-bottom: -1%;
+}
+.addProjButton:hover {
+  background: #CF4436;
+  box-shadow: 1px 1px 5px #555;
+}
+
+.addTaskButton {
+  background: #e74c3c;
+  border: none;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  width: 8%;
+  padding: 1.65%;
+  margin-right: 0.2%;
+  margin-left: 0.2%;
+}
+.addTaskButton:hover {
+  background: #CF4436;
+  box-shadow: 1px 1px 5px #555;
+}
+
+.addCommentButton {
+  background: #e74c3c;
+  border: none;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  width: 5%;
+  padding: 0.18%;
+  margin-right: -4.8%;
+  margin-left: 0.2%;
+}
+.addCommentButton:hover {
+  background: #CF4436;
+  box-shadow: 1px 1px 5px #555;
+}
+
+.deadline {
+  margin-top: 5%;
+  padding: 3%;
+  border: 1px solid darkgray;
+  border-radius: 3px;
+  margin-left: 5%;
+}
+
+.deadline_time {
+  border: 1px solid;
+  border-radius: 3px;
+  width: 31%;
+  padding: 1%;
+  margin-left: 33%;
+  margin-bottom: 2%;
+  margin-top: -1.5%;
+}
+
+.deadline_red {
+  border: 1px solid;
+  border-radius: 3px;
+  width: 31%;
+  padding: 1%;
+  margin-left: 33%;
+  margin-bottom: 2%;
+  margin-top: -1.5%;
+  background: red;
+  color: white;
+}
+
+.deadline_ok {
+  border: 1px solid;
+  border-radius: 3px;
+  width: 31%;
+  padding: 1%;
+  margin-left: 33%;
+  margin-bottom: 2%;
+  margin-top: -1.5%;
+  background: lightgreen;
+}
+
+i {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 4px;
+  margin-bottom: 0.8%;
+  margin-left: 0.2%;
+}
+
+a {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 4px;
+  margin-bottom: 0.2%;
+  margin-left: 1%;
+}
+
+.down_arrow {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/*style for accordion*/
+.section {
+  width: 51%;
+  margin-left: 25%;
+}
+
+.accordion__title {
+  width: 97% !important;
+  background-color: #97999A !important;
+  color: white !important;
+}
+
+.accordion__title:hover {
+  background: #6B6E70 !important;
+}
+
+.accordion__item {
+  width: 99.3%;
+}
+
+.accordion {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.accordion__body {
+  width: 96.6%;
+}
+
+.taskTab {
+
+}
+
