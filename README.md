@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This test product list app made with rails API and React.js representation.
 
-Things you may want to cover:
+* Rails: 5.1.6
+* Ruby: 2.4.2
+* React: 16
+* PostgreSQL
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+        Description: You can add, update and delete the new product to existing list of products 
+        with basic CRUD functions by using React representation. The application uses one table 
+        in the database that stores the product name, product description, and price.
