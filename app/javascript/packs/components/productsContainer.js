@@ -10,8 +10,9 @@ class productsContainer extends Component {
     this.state = {
       products: [],
       editingProductId: false,
+      search: ''
     }
-    // axios.defaults.withCredentials = true;
+    axios.defaults.withCredentials = true;
   }
 
   componentDidMount() {
@@ -54,15 +55,30 @@ class productsContainer extends Component {
       .catch(error => console.log(error))
   };
 
+  updateSearch(e) {
+    this.setState({search: e.target.value.substr(0, 20)});
+  };
+
   render() {
+    let filteredProducts = this.state.products.filter(
+      (product) => {
+        return product.name.toLowerCase().indexOf(
+          this.state.search.toLowerCase()) !== -1;
+      }
+    );
     return(
       <div>
+        <input className="searchBar" type="text"
+               value={this.state.search}
+               onChange={this.updateSearch.bind(this)}
+               placeholder="Searching by name..."
+        />
         <div>
           <button className="newProdButton" onClick={this.addNewProduct}>
             New Product
           </button>
         </div>
-        {this.state.products.map((product) => {
+        {filteredProducts.map((product) => {
           if(this.state.editingProductId === product.id) {
             return(<ProductForm product={product} key={product.id} updateProduct={this.updateProduct}
                                 nameRef={input => this.name = input} />)
